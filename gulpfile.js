@@ -6,7 +6,9 @@ const excel2json = require('gulp-excel2json'),
       now = new Date(),
       htmlPrettify = require('gulp-prettify'),
       cssbeautify = require('gulp-cssbeautify'),
-      jsbeautify = require('gulp-beautify');
+      jsbeautify = require('gulp-beautify'),
+      imagemin = require('gulp-imagemin'),
+      image = require('gulp-image');
 
 gulp.task('convert-to-html', () => {
     gulp.src('analyses.xlsx')
@@ -54,6 +56,13 @@ gulp.task('prettify-css', () => {
   gulp.src('./report/css/*.css')
     .pipe(cssbeautify())
     .pipe(gulp.dest('./report/css/'));
+});
+
+gulp.task('images-compression', () => {
+    return gulp.src('./*.png')
+        .pipe(image())
+        .pipe(imagemin())
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('default', ['convert-to-html', 'prettify-html', 'prettify-js', 'prettify-css', 'backup-json-data', 'backup-excel-data']);

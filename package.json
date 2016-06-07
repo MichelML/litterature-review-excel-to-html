@@ -16,7 +16,9 @@
     "dateformat": "^1.0.12",
     "gulp": "^3.9.1",
     "gulp-excel2json": "^1.0.5",
+    "gulp-image": "^2.0.1",
+    "gulp-imagemin": "^3.0.1",
     "gulp-jsbeautifier": "^2.0.3",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^1.2.2"
   }
 }

@@ -1,0 +1,22 @@
+.oddrow {
+    background-color: rgba(10,10,10,0.03);
+}
+
+hr {
+    background-color: black;
+    border: 2px solid #555;
+}
+
+/*This code is important to keep the CSS styling when printing in PDF or else*/
+@media print {
+    .oddrow {
+        background-color: rgba(10,10,10,0.03) !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+@media print {
+    .oddrow {
+        color: white !important;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "analyses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "convertextractiontohtml.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "excel-to-json": "^1.0.0",
+    "html-pdf": "^2.0.1"
+  },
+  "devDependencies": {
+    "dateformat": "^1.0.12",
+    "gulp": "^3.9.1",
+    "gulp-excel2json": "^1.0.5",
+    "gulp-jsbeautifier": "^2.0.3",
+    "gulp-rename": "^1.2.2",
+  }
+}

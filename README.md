@@ -14,9 +14,9 @@ Once you have converted the data from an Excel format to a JSON format, you can 
 
 ### Preview of the Excel file 
 
-<img href="excelpreview.png" width="300px" />
+<img href="./excelpreview.png" width="300px" />
 
 ### Preview of the HTML report
 
-<img href="reportpreview.png" width="300px" />
+<img href="./reportpreview.png" width="300px" />
 
